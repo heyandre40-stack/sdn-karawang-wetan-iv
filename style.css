@@ -240,3 +240,220 @@ body {
 .hero h1, .hero h2, .hero p {
     animation: fadeIn 1.2s ease;
 }
+/* SOSIAL MEDIA */
+.social-media {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.social-media a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* WARNA IKON */
+.social-media .ig {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}
+
+.social-media .fb {
+    background: #1877f2;
+}
+
+.social-media .yt {
+    background: #ff0000;
+}
+
+/* HOVER */
+.social-media a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.social-media {
+    display: flex;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.social {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.social svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
+/* WARNA */
+.ig { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); }
+.fb { background: #1877f2; }
+.yt { background: #ff0000; }
+
+/* HOVER */
+.social:hover {
+    transform: scale(1.15);
+}
+
+/* TOOLTIP */
+.social::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -35px;
+    background: #333;
+    color: white;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.social:hover::after {
+    opacity: 1;
+}
+/* =========================
+   TEMA PERPUSTAKAAN
+   ========================= */
+
+body {
+    background: #f5efe6;
+    color: #2e2e2e;
+}
+
+/* HEADER */
+.header {
+    background: #fffdf9;
+    border-bottom: 4px solid #7a4a2e;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #7a4a2e;
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.navbar a:hover {
+    background: #4b2e1e;
+}
+
+/* HERO PERPUSTAKAAN */
+.hero {
+    background: linear-gradient(
+        rgba(75, 46, 30, 0.7),
+        rgba(75, 46, 30, 0.7)
+    ),
+    url("perpustakaan.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fffdf9;
+    padding: 70px 20px;
+}
+
+/* CONTAINER */
+.container {
+    margin-top: 50px;
+}
+
+/* CONTENT */
+.content {
+    background: #fffdf9;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* JUDUL SECTION */
+.section-title {
+    color: #7a4a2e;
+    border-left: 6px solid #7a4a2e;
+    padding-left: 12px;
+    border-bottom: none;
+}
+
+/* POST BERITA */
+.post h4 {
+    color: #4b2e1e;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #fffdf9;
+    border-left: 6px solid #7a4a2e;
+    border-radius: 18px;
+}
+
+/* FOOTER */
+.footer {
+    background: #4b2e1e;
+    color: #fffdf9;
+}
+/* SOSIAL MEDIA PERPUSTAKAAN */
+
+.social-media {
+    display: flex;
+    gap: 14px;
+    margin-top: 15px;
+}
+
+.social {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #f5efe6;
+    border: 2px solid #7a4a2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.social svg {
+    width: 22px;
+    height: 22px;
+    fill: #7a4a2e;
+}
+
+.social:hover {
+    background: #7a4a2e;
+}
+
+.social:hover svg {
+    fill: #fffdf9;
+}
+.whatsapp-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #7a4a2e;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.whatsapp-btn:hover {
+    background: #4b2e1e;
+}
