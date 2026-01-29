@@ -730,3 +730,80 @@ body {
         font-size: 30px;
     }
 }
+/* HERO BERITA */
+.hero-berita {
+    background: linear-gradient(
+        rgba(58,42,24,0.75),
+        rgba(58,42,24,0.75)
+    ),
+    url("perpustakaan.jpg") center/cover no-repeat;
+    padding: 70px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-berita h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-berita p {
+    color: #f1e6d2;
+}
+
+/* GRID BERITA */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* CARD BERITA */
+.news-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-body {
+    padding: 18px;
+}
+
+.news-date {
+    font-size: 13px;
+    color: #8b5a2b;
+}
+
+.news-body h3 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.news-body p {
+    font-size: 14px;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 12px;
+    color: #0d6efd;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}

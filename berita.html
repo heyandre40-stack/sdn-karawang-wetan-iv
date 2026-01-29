@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Berita Sekolah</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Berita Sekolah | SDN Karawang Wetan IV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header fade-in">
-  <div class="header-left">
-    <img src="logo.jpg" class="logo">
-    <div>
-      <h1>SDN KARAWANG WETAN IV</h1>
-      <p>Sekolah Dasar Negeri</p>
+<header class="header">
+    <div class="header-left">
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <div>
+            <h1>SDN KARAWANG WETAN IV</h1>
+            <p>Sekolah Dasar Negeri</p>
+        </div>
     </div>
-  </div>
 </header>
 
-<nav class="navbar fade-in">
-  <a href="index.html">Beranda</a>
-  <a href="profil.html">Profil</a>
-  <a href="berita.html">Berita</a>
-  <a href="galeri.html">Galeri</a>
+<nav class="navbar">
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="berita.html" class="active">Berita</a>
+    <a href="galeri.html">Galeri</a>
 </nav>
 
-<section class="hero fade-in">
-  <h2>Berita Sekolah</h2>
+<!-- HERO BERITA -->
+<section class="hero-berita fade-in">
+    <h1>Berita & Informasi Sekolah</h1>
+    <p>Informasi terbaru kegiatan SDN Karawang Wetan IV</p>
 </section>
 
 <main class="container">
-<section class="content fade-in" id="berita-list"></section>
+
+<section class="content">
+
+<!-- CARD BERITA -->
+<div class="news-grid">
+
+<article class="news-card fade-in">
+    <img src="sdn.jpg" alt="Berita">
+    <div class="news-body">
+        <span class="news-date">29 Januari 2026</span>
+        <h3>Upacara Bendera Hari Senin</h3>
+        <p>Upacara bendera dilaksanakan dengan tertib dan penuh semangat.</p>
+        <a href="#" class="read-more">Baca Selengkapnya</a>
+    </div>
+</article>
+
+<article class="news-card fade-in">
+    <img src="sdn.jpg" alt="Berita">
+    <div class="news-body">
+        <span class="news-date">25 Januari 2026</span>
+        <h3>Kegiatan Literasi Pagi</h3>
+        <p>Siswa membaca buku sebelum pembelajaran dimulai.</p>
+        <a href="#" class="read-more">Baca Selengkapnya</a>
+    </div>
+</article>
+
+<article class="news-card fade-in">
+    <img src="sdn.jpg" alt="Berita">
+    <div class="news-body">
+        <span class="news-date">20 Januari 2026</span>
+        <h3>Asesmen Semester</h3>
+        <p>Pelaksanaan asesmen berjalan dengan lancar.</p>
+        <a href="#" class="read-more">Baca Selengkapnya</a>
+    </div>
+</article>
+
+</div>
+
+</section>
+
 </main>
 
-<footer class="footer fade-in">
-  <p>© 2026 SDN KARAWANG WETAN IV</p>
+<footer class="footer">
+    <p>© 2026 SDN Karawang Wetan IV</p>
 </footer>
-
-<script>
-const berita = [
-  {
-    judul: "Upacara Bendera",
-    tanggal: "15 Januari 2026",
-    isi: "Upacara berlangsung khidmat."
-  },
-  {
-    judul: "Literasi Pagi",
-    tanggal: "10 Januari 2026",
-    isi: "Membaca sebelum belajar."
-  }
-];
-
-const container = document.getElementById("berita-list");
-container.innerHTML = berita.map(b => `
-  <article class="post fade-in">
-    <h4>${b.judul}</h4>
-    <small>${b.tanggal}</small>
-    <p>${b.isi}</p>
-  </article>
-`).join("");
-</script>
 
 </body>
 </html>
