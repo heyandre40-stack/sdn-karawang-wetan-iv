@@ -457,3 +457,27 @@ body {
 .whatsapp-btn:hover {
     background: #4b2e1e;
 }
+/* WARNA TEKS HEADER */
+.header h1 {
+    color: #6b3e26; /* coklat pendidikan */
+}
+
+.header p {
+    color: #8b5e3c;
+}
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.hero h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-sub {
+    margin-top: 15px;
+    font-size: 16px;
+    opacity: 0.9;
+}
