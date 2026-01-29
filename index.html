@@ -1,68 +1,74 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <title>SDN KARAWANG WETAN IV</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1>SDN KARAWANG WETAN IV</h1>
-        <p>Website Resmi Sekolah</p>
-    </header>
-
     <!-- NAVBAR -->
-    <nav>
-        <a href="#beranda">Beranda</a>
-        <a href="#profil">Profil</a>
-        <a href="#guru">Guru</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#kontak">Kontak</a>
+    <nav class="navbar">
+        <div class="logo">SDN KW IV</div>
+        <div class="menu">
+            <a href="#beranda">Beranda</a>
+            <a href="#profil">Profil</a>
+            <a href="#guru">Guru</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+        </div>
     </nav>
 
-    <!-- BERANDA -->
-    <section id="beranda">
-        <h2>Selamat Datang</h2>
-        <p>Selamat datang di Website Resmi SDN Karawang Wetan IV.</p>
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+        <h1>SDN KARAWANG WETAN IV</h1>
+        <p>Website Resmi Sekolah Dasar Negeri Karawang Wetan IV</p>
     </section>
 
     <!-- PROFIL -->
-    <section id="profil">
+    <section class="card" id="profil">
         <h2>Profil Sekolah</h2>
         <p>
             SDN Karawang Wetan IV adalah sekolah dasar yang berkomitmen
-            mencetak generasi cerdas, berakhlak, dan berprestasi.
+            mencetak generasi yang cerdas, berkarakter, dan berprestasi.
         </p>
     </section>
 
     <!-- GURU -->
-    <section id="guru">
+    <section class="card" id="guru">
         <h2>Guru & Staf</h2>
-        <ul>
-            <li>Kepala Sekolah</li>
-            <li>Guru Kelas</li>
-            <li>Guru Mata Pelajaran</li>
-        </ul>
+        <div class="grid">
+            <div class="box">Kepala Sekolah</div>
+            <div class="box">Guru Kelas</div>
+            <div class="box">Guru Mapel</div>
+            <div class="box">Staf TU</div>
+        </div>
     </section>
 
     <!-- GALERI -->
-    <section id="galeri">
+    <section class="card" id="galeri">
         <h2>Galeri Sekolah</h2>
-        <p>Dokumentasi kegiatan sekolah.</p>
+        <p>Dokumentasi kegiatan dan prestasi sekolah.</p>
     </section>
 
     <!-- KONTAK -->
-    <section id="kontak">
-        <h2>Kontak</h2>
-        <p>WhatsApp: <a href="https://wa.me/628XXXXXXXXX">Klik di sini</a></p>
-        <p>Instagram | YouTube | Facebook</p>
+    <section class="card" id="kontak">
+        <h2>Kontak Sekolah</h2>
+        <a class="btn" href="https://wa.me/628XXXXXXXXXX">WhatsApp Sekolah</a>
+        <div class="sosmed">
+            <span>Instagram</span>
+            <span>YouTube</span>
+            <span>Facebook</span>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 SDN Karawang Wetan IV</p>
+        © 2026 SDN Karawang Wetan IV
     </footer>
 
 </body>
