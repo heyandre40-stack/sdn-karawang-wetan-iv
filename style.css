@@ -551,3 +551,34 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+.social-media {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.social svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+
+/* WARNA BRAND ASLI */
+.social.ig:hover { background: #E1306C; }
+.social.fb:hover { background: #1877F2; }
+.social.yt:hover { background: #FF0000; }
+
+.social:hover {
+    transform: scale(1.1);
+}
