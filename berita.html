@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Profil Sekolah</title>
+<title>Berita Sekolah</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -26,34 +26,40 @@
 </nav>
 
 <section class="hero fade-in">
-  <h2>Profil Sekolah</h2>
+  <h2>Berita Sekolah</h2>
 </section>
 
 <main class="container">
-<section class="content fade-in">
-  <h3 class="section-title">Tentang Sekolah</h3>
-  <p>SDN Karawang Wetan IV adalah sekolah dasar negeri yang berkomitmen pada pendidikan berkualitas.</p>
-
-  <h3 class="section-title">Visi</h3>
-  <p>Mewujudkan peserta didik yang beriman, cerdas, dan berkarakter.</p>
-
-  <h3 class="section-title">Misi</h3>
-  <ul>
-    <li>Meningkatkan mutu pembelajaran</li>
-    <li>Menanamkan nilai karakter</li>
-    <li>Mengembangkan budaya literasi</li>
-  </ul>
-</section>
-
-<aside class="sidebar fade-in">
-  <h4>Kepala Sekolah</h4>
-  <p>Nama Kepala Sekolah</p>
-</aside>
+<section class="content fade-in" id="berita-list"></section>
 </main>
 
 <footer class="footer fade-in">
   <p>© 2026 SDN KARAWANG WETAN IV</p>
 </footer>
+
+<script>
+const berita = [
+  {
+    judul: "Upacara Bendera",
+    tanggal: "15 Januari 2026",
+    isi: "Upacara berlangsung khidmat."
+  },
+  {
+    judul: "Literasi Pagi",
+    tanggal: "10 Januari 2026",
+    isi: "Membaca sebelum belajar."
+  }
+];
+
+const container = document.getElementById("berita-list");
+container.innerHTML = berita.map(b => `
+  <article class="post fade-in">
+    <h4>${b.judul}</h4>
+    <small>${b.tanggal}</small>
+    <p>${b.isi}</p>
+  </article>
+`).join("");
+</script>
 
 </body>
 </html>

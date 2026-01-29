@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Galeri | SDN KARAWANG WETAN IV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.jpg">
+<meta charset="UTF-8">
+<title>Galeri Foto - SDN Karawang Wetan IV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-    <div class="header-left">
-        <img src="logo.jpg" class="logo">
-        <div>
-            <h1>SDN KARAWANG WETAN IV</h1>
-            <p>Sekolah Dasar Negeri</p>
-        </div>
+  <div class="header-left">
+    <img src="logo.jpg" class="logo">
+    <div>
+      <h1>SDN KARAWANG WETAN IV</h1>
+      <p>Sekolah Dasar Negeri</p>
     </div>
+  </div>
 </header>
 
 <nav class="navbar">
-    <a href="index.html">Beranda</a>
-    <a href="profil.html">Profil</a>
-    <a href="sejarah.html">Sejarah</a>
-    <a href="guru.html">Guru</a>
-    <a href="galeri.html">Galeri</a>
+  <a href="index.html">Beranda</a>
+  <a href="profil.html">Profil</a>
+  <a href="berita.html">Berita</a>
+  <a href="galeri.html">Galeri</a>
 </nav>
 
-<main class="container" style="grid-template-columns:1fr">
-    <section class="content">
-        <h3 class="section-title">Galeri Kegiatan Sekolah</h3>
+<section class="hero">
+  <h2>Galeri Kegiatan</h2>
+  <p>Dokumentasi kegiatan sekolah</p>
+</section>
 
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px">
-            <img src="sdn.jpg" style="width:100%; border-radius:10px">
-            <img src="sdn.jpg" style="width:100%; border-radius:10px">
-            <img src="sdn.jpg" style="width:100%; border-radius:10px">
-            <img src="sdn.jpg" style="width:100%; border-radius:10px">
-        </div>
-    </section>
+<main class="container">
+<section class="content">
+
+<div class="slider">
+  <img id="slide" src="foto1.jpg">
+</div>
+
+<div class="galeri-grid">
+  <img src="foto1.jpg">
+  <img src="foto2.jpg">
+  <img src="foto3.jpg">
+  <img src="foto4.jpg">
+</div>
+
+</section>
 </main>
 
 <footer class="footer">
-    <p>© 2026 SDN KARAWANG WETAN IV</p>
+  <p>© 2026 SDN Karawang Wetan IV</p>
 </footer>
+
+<script>
+const images = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % images.length;
+  document.getElementById("slide").src = images[index];
+}, 3000);
+</script>
 
 </body>
 </html>
