@@ -644,18 +644,42 @@ body {
     max-height: 90%;
     border-radius: 12px;
 }
-/* HERO SPLIT (LIKE SMKN 1 CIMAHI) */
+/* HERO SPLIT + BACKGROUND PERPUSTAKAAN */
 .hero-split {
+    position: relative;
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     align-items: center;
     gap: 40px;
-    padding: 70px 8%;
-    background: linear-gradient(135deg, #f8f4ee, #ffffff);
+    padding: 80px 8%;
+    color: #fff;
+
+    /* BACKGROUND PERPUSTAKAAN */
+    background-image: url("perpustakaan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* OVERLAY AGAR TEKS TERBACA */
+.hero-split::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(58, 42, 24, 0.75); /* coklat edukatif */
+    z-index: 0;
+}
+
+/* ISI DI ATAS OVERLAY */
+.hero-text,
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+/* TEKS */
 .hero-text h2 {
-    color: #8b5a2b; /* coklat pendidikan */
+    color: #e6cfa7;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -664,35 +688,35 @@ body {
     font-size: 42px;
     line-height: 1.2;
     margin-bottom: 15px;
-    color: #2b2b2b;
 }
 
 .hero-text p {
     font-size: 16px;
-    color: #555;
+    color: #f1f1f1;
     margin-bottom: 25px;
 }
 
+/* TOMBOL */
 .btn-primary {
     display: inline-block;
-    padding: 12px 26px;
-    background: #0d6efd;
-    color: white;
+    padding: 12px 28px;
+    background: #d2b48c;
+    color: #3a2a18;
     text-decoration: none;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 700;
     transition: 0.3s;
 }
 
 .btn-primary:hover {
-    background: #084298;
+    background: #c19a6b;
 }
 
-/* HERO IMAGE */
+/* GAMBAR SEKOLAH */
 .hero-image img {
     width: 100%;
     border-radius: 18px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 /* RESPONSIVE */
